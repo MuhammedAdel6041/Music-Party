@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="Image/Icons/music-player.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/mediaQuery.css" />
+    <title>Musical</title>
+  </head>
+  <body>
+    <section id="loading">
+      <div class="loaderx">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
+      </div>
+    </section>
+    <button type="button" id="BtnUp" class="">
+      <i class="fa-solid fa-up-long"></i>
+    </button>
+    <!-- ################# START  SIDE NAVBAR ##################### -->
+    <nav>
+      <div class="container-fluid">
+        <div
+          class="nav-content d-flex justify-content-between align-items-center"
+        >
+          <div class="site-logo d-flex align-items-center ms-3">
+            <img src="Image/Logo/logo(2).png" alt="Festival" />
+          </div>
+          <aside>
+            <div class="navigation">
+              <div class="sideNav">
+                <div id="slideIcon" class="side-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul>
+                  <div
+                    class="close-icon d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <li>
+                    <a href="#Header">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-house"></i></span
+                      >Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slider">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-info"></i
+                      ></span>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#team">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-music"></i
+                      ></span>
+                      Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-envelope"></i
+                      ></span>
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </nav>
+    <!-- ################# END  SIDE NAVBAR ##################### -->
+    <!-- ################# START  HEADER SECTION ##################### -->
+    <section
+      id="Header"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="header-content">
+        <h1>Welcome to the musical</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quam?
+        </p>
+        <div class="btn-groups">
+          <button type="button" class="btn-1">buy a ticket</button>
+          <button type="button" class="btn-2">more info</button>
+        </div>
+        <div class="custom-shape-divider-bottom-1692049563">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <span class="loader"></span>
+      </div>
+    </section>
+    <!-- ################# END  HEADER SECTION ##################### -->
+    <!-- ################# Start  Accordion SECTION ##################### -->
+    <section id="slider">
+      <div class="container">
+        <div class="heading">
+          <h1>singer information</h1>
+        </div>
+        <div
+          id="man"
+          class="header-info d-flex align-items-center justify-content-between toggel"
+        >
+          <h2>Billie Eilish</h2>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="Box-info" id="man1">
+          <img src="Image/Cards/Bili(2).jpg" alt="Alex" id="mainImage-1" />
+          <div class="inner-box-info">
+            <h1>Billie Eilish</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              illum quas, adipisci molestias illo deleniti ad ipsam quos quia,
+              tenetur veniam neque itaque quasi quis in tempore distinctio
+              quidem nihil?
+            </p>
+            <h4>Photos</h4>
+            <div class="image-groups" id="sideImage-1">
+              <img src="Image/Cards/Bili(1).jpg" alt="" />
+              <img src="Image/Cards/Bili(3).jpg" alt="" />
+              <img src="Image/Cards/Bili(4).jpg" alt="" />
+              <img src="Image/Cards/Bili(5).jpg" alt="" />
+            </div>
+            <div class="socila-icons d-flex align-items-center">
+              <div
+                class="icon-box facebook d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div
+                class="icon-box twitter d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div
+                class="icon-box spotify d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-spotify"></i></a>
+              </div>
+              <div
+                class="icon-box youtube d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-info d-flex align-items-center justify-content-between toggel"
+        >
+          <h2>Tupac Shakur</h2>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="Box-info">
+          <img src="Image/Cards/Top(5).jpg" alt="Alex" id="mainImage-2" />
+          <div class="inner-box-info">
+            <h1>Tupac Shakur</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              illum quas, adipisci molestias illo deleniti ad ipsam quos quia,
+              tenetur veniam neque itaque quasi quis in tempore distinctio
+              quidem nihil?
+            </p>
+            <h4>Photos</h4>
+            <div class="image-groups" id="sideImage-2">
+              <img src="Image/Cards/Top(1).jpg" alt="" />
+              <img src="Image/Cards/Top(2).jpg" alt="" />
+              <img src="Image/Cards/Top(3).jpg" alt="" />
+              <img src="Image/Cards/Top(4).jpg" alt="" />
+            </div>
+            <div class="socila-icons d-flex align-items-center">
+              <div
+                class="icon-box facebook d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div
+                class="icon-box twitter d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div
+                class="icon-box spotify d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-spotify"></i></a>
+              </div>
+              <div
+                class="icon-box youtube d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-info d-flex align-items-center justify-content-between toggel"
+        >
+          <h2>eminem</h2>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="Box-info">
+          <img src="Image/Cards/Emin(2).jpg" alt="Alex" id="mainImage-3" />
+          <div class="inner-box-info">
+            <h1>eminem</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              illum quas, adipisci molestias illo deleniti ad ipsam quos quia,
+              tenetur veniam neque itaque quasi quis in tempore distinctio
+              quidem nihil?
+            </p>
+            <h4>Photos</h4>
+            <div class="image-groups" id="sideImage-3">
+              <img src="Image/Cards/Emin(1).jpg" alt="" />
+              <img src="Image/Cards/Emin(3).jpg" alt="" />
+              <img src="Image/Cards/Emin(4).jpg" alt="" />
+              <img src="Image/Cards/Emin(5).jpg" alt="" />
+            </div>
+            <div class="socila-icons d-flex align-items-center">
+              <div
+                class="icon-box facebook d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div
+                class="icon-box twitter d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div
+                class="icon-box spotify d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-spotify"></i></a>
+              </div>
+              <div
+                class="icon-box youtube d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-info d-flex align-items-center justify-content-between toggel"
+        >
+          <h2>50 cent</h2>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="Box-info">
+          <img src="Image/Cards/ceint(1).jpg" alt="Alex" id="mainImage-4" />
+          <div class="inner-box-info">
+            <h1>50 cent</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              illum quas, adipisci molestias illo deleniti ad ipsam quos quia,
+              tenetur veniam neque itaque quasi quis in tempore distinctio
+              quidem nihil?
+            </p>
+            <h4>Photos</h4>
+            <div class="image-groups" id="sideImage-4">
+              <img src="Image/Cards/ceint(2).jpg" alt="" />
+              <img src="Image/Cards/ceint(3).jpg" alt="" />
+              <img src="Image/Cards/ceint(4).jpg" alt="" />
+              <img src="Image/Cards/ceint(5).jpg" alt="" />
+            </div>
+            <div class="socila-icons d-flex align-items-center">
+              <div
+                class="icon-box facebook d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div
+                class="icon-box twitter d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div
+                class="icon-box spotify d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-spotify"></i></a>
+              </div>
+              <div
+                class="icon-box youtube d-flex justify-content-center align-items-center"
+              >
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ################# END  Accordion SECTION ##################### -->
+    <!-- ################# START  COUNTER SECTION ##################### -->
+    <section id="counter">
+      <div class="container py-5 text-center">
+        <div class="row g-5">
+          <div class="col-3">
+            <div class="time" id="days"></div>
+          </div>
+          <div class="col-3">
+            <div class="time" id="hours"></div>
+          </div>
+          <div class="col-3">
+            <div class="time" id="minutes"></div>
+          </div>
+          <div class="col-3">
+            <div class="time" id="seconds"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ################# End  COUNTER SECTION ##################### -->
+    <!-- ################# START  TEAM SECTION ##################### -->
+    <section id="team">
+      <div class="container my-5">
+        <div class="heading">
+          <h1>our Team</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="singer-card my-5">
+              <img src="Image/Cards/3.jpg" class="w-100" alt="" />
+              <div
+                class="singer-info d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="singer-icons facebook d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div
+                  class="singer-icons twitter d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div
+                  class="singer-icons spotify d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <div
+                  class="singer-icons youtube d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="singer-card my-5">
+              <img src="Image/Cards/2.jpg" class="w-100" alt="" />
+              <div
+                class="singer-info d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="singer-icons facebook d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div
+                  class="singer-icons twitter d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div
+                  class="singer-icons spotify d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <div
+                  class="singer-icons youtube d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="singer-card my-5">
+              <img src="Image/Cards/1 (1).jpg" class="w-100" alt="" />
+              <div
+                class="singer-info d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="singer-icons facebook d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div
+                  class="singer-icons twitter d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div
+                  class="singer-icons spotify d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <div
+                  class="singer-icons youtube d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="singer-card my-5">
+              <img src="Image/Cards/3.jpg" class="w-100" alt="" />
+              <div
+                class="singer-info d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="singer-icons facebook d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div
+                  class="singer-icons twitter d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div
+                  class="singer-icons spotify d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <div
+                  class="singer-icons youtube d-flex justify-content-center align-items-center"
+                >
+                  <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ################# END  TEAM SECTION ##################### -->
+    <!-- #################  START CONTACT SECTION ##################### -->
+    <section id="contact">
+      <div class="container py-5">
+        <div class="contact-style">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="side-contact">
+                <h1>Contact Us</h1>
+                <h3>contact info:</h3>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i
+                    ><span
+                      >New Street 22545, Nexa Road, New York City, USA.
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+001-000-000-000. </span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope"></i
+                    ><span>hello@uigrid.com</span>
+                  </li>
+                </ul>
+                <div
+                  class="media-icons d-flex align-items-center justify-content-center"
+                >
+                  <div
+                    class="contact-icons facebook d-flex justify-content-center align-items-center"
+                  >
+                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                  <div
+                    class="contact-icons youtube d-flex justify-content-center align-items-center"
+                  >
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                  <div
+                    class="contact-icons linkedin d-flex justify-content-center align-items-center"
+                  >
+                    <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <div
+                    class="contact-icons twitter d-flex justify-content-center align-items-center"
+                  >
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form">
+                <form action="">
+                  <input type="text" placeholder="User Name" />
+                  <input type="email" placeholder="Email" />
+                  <textarea
+                    name=""
+                    id="textarrID1"
+                    cols="30"
+                    rows="10"
+                    placeholder="Massage"
+                    class="text-white"
+                  ></textarea>
+                  <p>only<span id="remaining">100</span> char</p>
+                  <button type="submit">send massage</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #################  START CONTACT SECTION ##################### -->
+    <!-- #################  START FOOTER SECTION ##################### -->
+    <footer>
+      <div class="container">
+        <div class="footer-info m-auto text-center">
+          <div
+            class="footer-icons d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="footer-media facebook d-flex justify-content-center align-items-center"
+            >
+              <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div
+              class="footer-media twitter d-flex justify-content-center align-items-center"
+            >
+              <a href=""> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div
+              class="footer-media youtube d-flex justify-content-center align-items-center"
+            >
+              <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <p>
+            <span> <i class="fa-solid fa-location-dot px-2"></i></span>New
+            Street 22545, Nexa Road, New York City, USA.
+          </p>
+          <div class="street-info d-flex justify-content-center">
+            <p>
+              <span><i class="fa-solid fa-phone"></i></span>+001-000-000-000.
+            </p>
+            <p>
+              <span><i class="fa-regular fa-envelope"></i></span>
+              <a href="#"> hello@uigrid.com</a>
+            </p>
+          </div>
+          <img src="Image/Logo/logo(2).png" alt="" />
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="copy d-flex justify-content-between align-items-center">
+          <p>Copyright 1999-2023 by Refsnes Data. All Rights Reserved.</p>
+          <p>Musical is Powered by spotify</p>
+        </div>
+      </div>
+    </footer>
+    <!-- #################  END FOOTER SECTION ##################### -->
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

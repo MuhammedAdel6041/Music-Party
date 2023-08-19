@@ -1,0 +1,439 @@
+@media screen and (max-width: 575px) {
+
+    .nav-content .site-logo img {
+        width: 30%;
+    }
+
+    .nav-content .side-icon i {
+        font-size: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 15px;
+    }
+
+    .header-content .btn-groups button {
+        padding: 5px 15px;
+        background-color: transparent;
+        margin: 0 5px;
+        color: aliceblue;
+        font-size: 15px;
+        text-transform: capitalize;
+        border-radius: 15px;
+    }
+
+    .loader {
+        width: 25px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+    }
+
+    .heading {
+        background-color: #F50136;
+        text-align: center;
+        width: fit-content;
+        padding: 10px;
+        margin: 15px auto;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    .header-info {
+        padding: 10px;
+    }
+
+    .header-info h2 {
+        font-size: 20px;
+    }
+
+    .header-info i {
+        font-size: 15px;
+    }
+
+    .Box-info {
+        width: 100%;
+    }
+
+    .Box-info img {
+        width: 20%;
+    }
+
+    .inner-box-info {
+        width: 100%;
+        padding: 10px;
+       
+    }
+
+    .inner-box-info h1 {
+        font-size: 2.4rem;
+    }
+
+    .inner-box-info p {
+        font-size: 1rem;
+    }
+
+    .inner-box-info h4 {
+        font-size: 1.3rem;
+
+    }
+
+    .image-groups img {
+        width: 20%;
+        margin: 0 2px;
+    }
+
+    .socila-icons {
+        padding: 15px;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-contact {
+        padding: 5% 5%;
+    }
+
+    .side-contact h1 {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    .side-contact h3 {
+        font-size: 20px;
+    }
+
+    .footer-info .footer-icons .footer-media {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .footer-info .footer-icons .footer-media a i {
+        font-size: 15px;
+    }
+    .footer-info p{
+        font-size: 15px;
+    }
+    .footer-info  .street-info{
+        padding: 10px;
+    }
+    .footer-info  .street-info p{
+        padding: 0 10px;
+    }
+    .footer-info  .street-info p span{
+        font-size: 20px ;
+        margin: 0 15px;
+    }
+    .footer-info  img{
+        width: 40%;
+        margin: 25px 0;
+    }
+    .copy p{
+        font-size: 12px ;
+        
+    
+    }
+
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px) {
+    
+    .nav-content .site-logo img {
+        width: 40%;
+    }
+
+    .nav-content .side-icon i {
+        font-size: 1.5rem;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        font-size: 15px;
+    }
+
+    .header-content .btn-groups button {
+        padding: 8px 20px;
+    }
+
+    .loader {
+        width: 35px;
+        height: 60px;
+    }
+
+    .heading {
+        padding: 20px;
+        }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .header-info {
+        padding: 20px;
+    }
+
+    .header-info h2 {
+        font-size: 25px;
+    }
+
+    .header-info i {
+        font-size: 20px;
+    }
+
+    .Box-info {
+        width: 100%;
+    }
+
+    .Box-info img {
+        width: 35%;
+    }
+
+    .inner-box-info {
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .inner-box-info h1 {
+        font-size: 2.9rem;
+    }
+
+    .inner-box-info p {
+        font-size: 1.1rem;
+    }
+
+    .inner-box-info h4 {
+        font-size: 1.8rem;
+
+    }
+
+    .image-groups img {
+        width: 20%;
+        margin: 0 2px;
+    }
+
+    .socila-icons {
+        padding: 20px;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+    .singer-info {
+        
+        border-radius: 30px;
+        padding: 12px;
+        width: 100%;
+    }
+    .singer-icons a i {
+        font-size: 16px;
+    }
+    
+    .side-contact {
+        padding: 5% 5%;
+    }
+
+    .side-contact h1 {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    .side-contact h3 {
+        font-size: 20px;
+    }
+
+    .footer-info .footer-icons .footer-media {
+        width: 60px;
+        height: 60px;
+        
+    }
+    .footer-info .footer-icons .footer-media a i {
+        font-size: 20px;
+    }
+    .footer-info p{
+        font-size: 18px;
+    }
+    .footer-info  .street-info{
+        padding: 10px;
+    }
+    .footer-info  .street-info p{
+        padding: 0 10px;
+    }
+    .footer-info  .street-info p span{
+        font-size: 20px ;
+        margin: 0 15px;
+    }
+    .footer-info  img{
+        width: 45%;
+        margin: 25px 0;
+    }
+    .copy p{
+        font-size: 15px ;
+        
+    
+    }
+    
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  
+    .nav-content .site-logo img {
+        width: 48%;
+    }
+
+    .nav-content .side-icon i {
+        font-size: 1.8rem;
+    }
+
+    .header-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .header-content .btn-groups button {
+        padding: 10px 25px;
+        font-size: 17px;
+    }
+
+    .loader {
+        width: 40px;
+        height: 70px;
+    }
+
+    .heading {
+        padding: 25px;
+        }
+
+    .heading h1 {
+        font-size: 2.1rem;
+    }
+
+    .header-info {
+        padding: 25px;
+    }
+
+    .header-info h2 {
+        font-size: 30px;
+    }
+
+    .header-info i {
+        font-size: 20px;
+    }
+
+    .Box-info {
+        width: 100%;
+    }
+
+    .Box-info img {
+        width: 40%;
+    }
+
+    .inner-box-info {
+        width: 100%;
+        padding: 25px;
+        
+    }
+
+    .inner-box-info h1 {
+        font-size: 2.9rem;
+    }
+
+    .inner-box-info p {
+        font-size: 1.1rem;
+    }
+
+    .inner-box-info h4 {
+        font-size: 1.8rem;
+
+    }
+
+    .image-groups img {
+        width: 20%;
+        margin: 0 2px;
+    }
+
+    .socila-icons {
+        padding: 20px;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+    .singer-info {
+       
+        border-radius: 30px;
+        padding: 15px;
+        width: 100%;
+    }
+    .singer-icons a i {
+        font-size: 20px;
+    }
+    
+    .side-contact {
+        padding: 5%;
+    }
+
+    .side-contact h1 {
+        font-size: 35px;
+    }
+
+    .side-contact h3 {
+        font-size: 25px;
+    }
+
+    .footer-info .footer-icons .footer-media {
+        width: 60px;
+        height: 60px;
+
+    }
+    .footer-info .footer-icons .footer-media a i {
+        font-size: 20px;
+    }
+    .footer-info p{
+        font-size: 18px;
+    }
+    .footer-info  .street-info{
+        padding: 10px;
+    }
+    .footer-info  .street-info p{
+        padding: 0 10px;
+    }
+    .footer-info  .street-info p span{
+        font-size: 20px ;
+        margin: 0 15px;
+    }
+    .footer-info  img{
+        width: 45%;
+        margin: 25px 0;
+    }
+    .copy p{
+        font-size: 15px ;
+        
+    
+    }
+}

@@ -1,0 +1,828 @@
+/*---------------------------------------
+CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --main-Color: #0D1282;
+    --second-Color:  #F50136;
+    --border-Color: #66347F;
+    --btn-Color: #eb1414;
+    --white-Color: #FFF;
+    --main-Font:'Merriweather', serif ;
+    --second-Font:  'Poppins', sans-serif;
+    --Another-Font:'Roboto Mono', monospace ;
+    --Box-shadow:  rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --padding: 1.25rem;
+    
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--white-Color);
+    overflow: hidden;
+}
+/*---------------------------------------
+--##--BUTTON PAGE UP Component Style
+----------------------------------------- */
+#BtnUp {
+    position: fixed;
+    bottom: 70px;
+    right: 25px;
+    z-index: 1045545005;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+    box-shadow: var(--Box-shadow);
+}
+
+#BtnUp i {
+    font-size: 20px;
+    color: var(--main-Color);
+    padding: 10px;
+}
+
+/*---------------------------------------
+--##--Site NavBar Component Style
+----------------------------------------- */
+#loading {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glitch {
+    overflow: hidden;
+    position: relative;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+    animation: shift 1s ease-in-out infinite alternate;
+}
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.glitch:before {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #8b00ff;
+    z-index: -1;
+}
+.glitch:after {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #00e571;
+    z-index: -2;
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(-3px, -3px);
+    }
+    60% {
+        transform: translate(3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+@keyframes shift {
+    0%,
+    40%,
+    44%,
+    58%,
+    61%,
+    65%,
+    69%,
+    73%,
+    100% {
+        transform: skewX(0deg);
+    }
+    41% {
+        transform: skewX(10deg);
+    }
+    42% {
+        transform: skewX(-10deg);
+    }
+    59% {
+        transform: skewX(40deg) skewY(10deg);
+    }
+    60% {
+        transform: skewX(-40deg) skewY(-10deg);
+    }
+    63% {
+        transform: skewX(10deg) skewY(-5deg);
+    }
+    70% {
+        transform: skewX(-50deg) skewY(-20deg);
+    }
+    71% {
+        transform: skewX(10deg) skewY(-10deg);
+    }
+}
+
+/*---------------------------------------
+--##--Site NavBar Component Style
+----------------------------------------- */
+nav {
+    transition: all 0.5s ease-out;
+    position: fixed;
+    width: 100%;
+    z-index: 104554500;
+    padding: 15px 0;
+    box-shadow: var(--Box-shadow);
+}
+
+.nav-content .site-logo img {
+    width: 40%;
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+
+.side-icon {
+    display: flex;
+    align-self: start;
+    cursor: pointer;
+}
+
+.side-icon i {
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+
+.sideNav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    z-index: 500000;
+    padding: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.sideNav ul .close-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: var(--Box-shadow);
+    background-color: #fff;
+    margin: 10px;
+}
+.sideNav ul .close-icon:hover.close-icon i {
+    color: red;
+}
+.sideNav ul .close-icon i {
+    font-size: 25px;
+    transition: all 0.4s ease-in-out;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    background-color: #fbfbfb;
+    box-shadow: var(--Box-shadow);
+
+}
+
+.sideNav ul li {
+    background-color: navy;
+    margin: 15px;
+    box-shadow: var(--Box-shadow);
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideNav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+
+.sideNav ul li a span i {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+/*---------------------------------------
+--##--Site Header Component Style
+----------------------------------------- */
+#Header {
+    height: 100vh;
+    background-color: wheat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.485)), url(../Image/Background/slider.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header-content {
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-family: var(--second-Font);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.header-content p {
+    font-size: 20px;
+    font-family: var(--main-Font);
+    text-transform: capitalize;
+}
+
+.header-content .btn-groups button {
+    padding: 8px 30px;
+    background-color: transparent;
+    margin: 0 10px;
+    color: aliceblue;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.header-content .btn-groups .btn-1 {
+    background-color: var(--btn-Color);
+    border: 2px solid var(--btn-Color);
+    transition: all 0.4s ease-in-out;
+}
+
+.header-content .btn-groups .btn-2 {
+    background-color: transparent;
+    border: 2px solid var(--btn-Color);
+    transition: all 0.4s ease-in-out;
+}
+
+.header-content .btn-groups .btn-1:hover {
+    background-color: transparent;
+}
+
+.header-content .btn-groups .btn-2:hover {
+    background-color: var(--btn-Color);
+}
+
+/*---------------------------------------
+--##--SVG Component Style
+----------------------------------------- */
+.custom-shape-divider-bottom-1692049563 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692049563 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1692049563 .shape-fill {
+    fill: #ffffff;
+}
+
+/*---------------------------------------
+--##--LOADER Component Style
+----------------------------------------- */
+.loader {
+    width: 35px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+    animation: fadeDown 1s ease-out infinite;
+}
+
+@keyframes fadeDown {
+    0% {
+        top: 0%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 60%;
+        opacity: 0;
+    }
+}
+
+/*---------------------------------------
+--##--Singer Section Component Style
+----------------------------------------- */
+#slider {
+    margin: 10% 0;
+}
+
+.heading {
+    background-color: #F50136;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.heading h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#man {
+    margin-top: 50px;
+}
+
+.header-info {
+    cursor: pointer;
+    padding: 25px;
+    margin: 20px 0;
+    background-color: #F50136;
+    box-shadow: -9px 10px 15px -8px rgba(66, 68, 90, 1);
+}
+
+.header-info h2 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header-info i {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid navy;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: var(--Box-shadow);
+}
+
+.Box-info {
+    width: 100%;
+    display: flex;
+
+}
+
+.Box-info img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+.inner-box-info {
+    width: 100%;
+    padding: 30px;
+    border: 3px solid navy;
+    border-radius: 20px;
+}
+
+.inner-box-info h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.inner-box-info p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.inner-box-info h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.inner-box-info .image-groups {
+    padding: 5px;
+}
+
+.image-groups img {
+    width: 15%;
+    padding: 10px;
+    border: 2px solid navy;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.socila-icons {
+    padding: 25px;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #faf9f9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0 7px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.icon-box a i {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.icon-box:hover {
+    background-color: #F50136;
+    color: #fff;
+}
+
+.icon-box:hover a i {
+    color: #FFF;
+}
+
+/*---------------------------------------
+--##--COUNTER SECTION Component Style
+----------------------------------------- */
+#counter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../Image/Background/bg-img.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+#counter .time {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    color: #ff0000;
+    font-size: 1.8rem;
+    border-radius: 20px;
+}
+
+#counter .time span {
+    padding: 0 10px;
+    color: #FFF;
+}
+
+/*---------------------------------------
+--##--TEAM CARDS Section Component Style
+----------------------------------------- */
+#team {
+    margin: 20px 0;
+}
+
+.singer-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.singer-card img {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.singer-card:hover .singer-info {
+    bottom: 5px;
+}
+
+.singer-info {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    bottom: -25%;
+    cursor: pointer;
+}
+
+.singer-icons {
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.singer-icons a i {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.facebook:hover {
+    background-color: #3966AA;
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.spotify:hover {
+    background-color: #1ED760;
+}
+
+.youtube:hover {
+    background-color: #eb1414;
+}
+
+.singer-icons:hover a i {
+    color: #fffdfd;
+}
+
+/*---------------------------------------
+--##--Counter Section Component Style
+----------------------------------------- */
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../Image/Background/b43d8af4f60334fca490f07219de081e.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-style {
+    border: 2px solid #808080;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.side-contact {
+    padding: var(--padding);
+}
+
+.side-contact h1 {
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 50px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 10px;
+}
+
+.side-contact h3 {
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.side-contact ul {
+    list-style-type: none;
+    padding: 10px 35px;
+
+    color: #fff;
+}
+
+.side-contact ul li {
+    margin: 10px;
+}
+
+.side-contact ul li i {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.side-contact ul li span {
+    padding: 0 15px;
+}
+
+.media-icons .contact-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.media-icons .facebook:hover {
+    background-color: #3966AA;
+}
+
+.media-icons .youtube:hover {
+    background-color: #eb1414;
+}
+
+.media-icons .twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.media-icons .linkedin:hover {
+    background-color: #0A66C2;
+}
+
+.media-icons .contact-icons:hover a i {
+    color: #fff;
+}
+
+.media-icons .contact-icons a i {
+    font-size: 20px;
+    color: #020202;
+    transition: all 0.5s ease-in-out;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form input:focus {
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    padding: 20px;
+}
+
+.form input[type=text] {
+    margin: 20px 0;
+}
+
+.form input[type=email] {
+    margin: 20px 0;
+}
+
+.form textarea {
+    margin: 20px 0;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.form textarea:focus {
+    border-bottom: 5px solid #fff;
+    border-top: 5px solid #fff;
+    padding: 20px;
+}
+
+.form p {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #fff;
+}
+
+.form p span {
+    color: #eb1414;
+}
+
+.form button {
+    background-color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid navy;
+    border-radius: 20px;
+}
+
+
+/*---------------------------------------
+--##--FOOTER Component Style
+----------------------------------------- */
+footer {
+    background-color: #e1dede;
+}
+
+.footer-info .footer-icons {
+    padding: 25px;
+}
+
+.footer-info .footer-icons .footer-media {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-info .footer-icons .footer-media a i {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.footer-info .footer-icons .facebook:hover {
+    background-color: #3966AA;
+}
+
+.footer-info .footer-icons .twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.footer-info .footer-icons .youtube:hover {
+    background-color: #eb1414;
+}
+
+.footer-info .footer-icons .footer-media:hover a i {
+    color: #f8f8f8;
+}
+
+.footer-info p {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.footer-info .street-info {
+    padding: 15px;
+}
+
+.footer-info .street-info p {
+
+    padding: 0 calc((var(--padding)) + 10px);
+}
+
+.footer-info .street-info p a {
+    text-decoration: none;
+    color: #F50136;
+}
+
+.footer-info .street-info p span {
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.footer-info img {
+    width: 30%;
+    margin: 30px 0;
+    filter: drop-shadow(4px 4px 5px #000a);
+}
+
+.copy {
+    padding: 10px;
+}
+
+.copy p {
+    font-size: 10px;
+    text-transform: capitalize;
+}
