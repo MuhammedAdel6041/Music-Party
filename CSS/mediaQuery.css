@@ -70,7 +70,7 @@
     }
 
     .Box-info img {
-        width: 20%;
+      width: 20%;
     }
 
     .inner-box-info {
@@ -151,16 +151,16 @@
     }
     #counter .time {
         border: 2px solid rgb(255, 255, 255);
-        padding: 12px ;
+        padding: 15px ;
         color: #ff0000;
         font-size: 1rem;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     
     #counter .time span {
-       
-        color: #FFF;
-        font-size: 10px;
+     
+        margin-left: 1px;
+        font-size: 20px;
     }
     
 
@@ -309,7 +309,7 @@
         border: 2px solid rgb(255, 255, 255);
         padding: 12px ;
         color: #ff0000;
-        font-size: 15px;
+        font-size: 1rem;
         border-radius: 20px;
     }
     

@@ -28,7 +28,7 @@ $(document).ready(function () {
      * COUNTER DOWN SOURCE CODE
      */
     function makeTimer() {
-        var endTime = new Date("29 April 2024 9:56:00 GMT+01:00");
+        var endTime = new Date("29 September 2023 9:56:00 GMT+01:00");
         endTime = (Date.parse(endTime) / 1000);
         var now = new Date();
         now = (Date.parse(now) / 1000);
@@ -37,10 +37,10 @@ $(document).ready(function () {
         var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
         var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
         var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-        $("#days").html(days + "<span>Days</span>");
-        $("#hours").html(hours + "<span>Hours</span>");
-        $("#minutes").html(minutes + "<span>Minutes</span>");
-        $("#seconds").html(seconds + "<span>Seconds</span>");
+        $("#days").html(days + "<span>D</span>");
+        $("#hours").html(hours + "<span>H</span>");
+        $("#minutes").html(minutes + "<span>M</span>");
+        $("#seconds").html(seconds + "<span>S</span>");
     }
     setInterval(function () { makeTimer(); }, 1000);
     /**
@@ -59,7 +59,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         let windowScroll = $(window).scrollTop();
         if (windowScroll > sectionTop - 350) {
-            $('nav').css('backgroundColor', '#E21818')
+            $('nav').css('backgroundColor', '#2B4865')
             $('#BtnUp').fadeIn(500);
         }
         else {
@@ -81,6 +81,8 @@ $(document).ready(function () {
         console.log(hrefLink);
         let sectionMove = $(hrefLink).offset().top
         console.log(sectionMove);
+        $("li a").removeClass("Active-Link");
+        $(this).addClass("Active-Link");
         $("body,html").animate({ scrollTop: sectionMove }, 1000)
     })
     $('#Header .loader').click(function () {

@@ -3,16 +3,16 @@ CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
     --main-Color: #0D1282;
-    --second-Color:  #F50136;
+    --second-Color: #F50136;
     --border-Color: #66347F;
     --btn-Color: #eb1414;
     --white-Color: #FFF;
-    --main-Font:'Merriweather', serif ;
-    --second-Font:  'Poppins', sans-serif;
-    --Another-Font:'Roboto Mono', monospace ;
-    --Box-shadow:  rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --main-Font: 'Merriweather', serif;
+    --second-Font: 'Poppins', sans-serif;
+    --Another-Font: 'Roboto Mono', monospace;
+    --Box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     --padding: 1.25rem;
-    
+
 }
 
 body {
@@ -22,6 +22,7 @@ body {
     background-color: var(--white-Color);
     overflow: hidden;
 }
+
 /*---------------------------------------
 --##--BUTTON PAGE UP Component Style
 ----------------------------------------- */
@@ -57,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .glitch {
     overflow: hidden;
     position: relative;
@@ -68,6 +70,7 @@ body {
     z-index: 1;
     animation: shift 1s ease-in-out infinite alternate;
 }
+
 .glitch:before,
 .glitch:after {
     display: block;
@@ -77,37 +80,47 @@ body {
     left: 0;
     opacity: 0.8;
 }
+
 .glitch:before {
     animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
     color: #8b00ff;
     z-index: -1;
 }
+
 .glitch:after {
     animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
     color: #00e571;
     z-index: -2;
 }
+
 @keyframes glitch {
     0% {
         transform: translate(0);
     }
+
     20% {
         transform: translate(-3px, 3px);
     }
+
     40% {
         transform: translate(-3px, -3px);
     }
+
     60% {
         transform: translate(3px, 3px);
     }
+
     80% {
         transform: translate(3px, -3px);
     }
+
     to {
         transform: translate(0);
     }
 }
+
 @keyframes shift {
+
     0%,
     40%,
     44%,
@@ -119,24 +132,31 @@ body {
     100% {
         transform: skewX(0deg);
     }
+
     41% {
         transform: skewX(10deg);
     }
+
     42% {
         transform: skewX(-10deg);
     }
+
     59% {
         transform: skewX(40deg) skewY(10deg);
     }
+
     60% {
         transform: skewX(-40deg) skewY(-10deg);
     }
+
     63% {
         transform: skewX(10deg) skewY(-5deg);
     }
+
     70% {
         transform: skewX(-50deg) skewY(-20deg);
     }
+
     71% {
         transform: skewX(10deg) skewY(-10deg);
     }
@@ -194,9 +214,11 @@ nav {
     background-color: #fff;
     margin: 10px;
 }
+
 .sideNav ul .close-icon:hover.close-icon i {
-    color: red;
+    color: var(--btn-Color);
 }
+
 .sideNav ul .close-icon i {
     font-size: 25px;
     transition: all 0.4s ease-in-out;
@@ -219,6 +241,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .sideNav ul li a {
     text-decoration: none;
     color: #fff;
@@ -231,6 +254,17 @@ nav {
 .sideNav ul li a span i {
     border: 2px solid rgba(0, 0, 0, 0);
     padding: 5px;
+}
+
+.Active-Link {
+    background-color:var(--btn-Color);
+    box-shadow: var(--Box-shadow);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------------------------------------
@@ -507,8 +541,9 @@ nav {
 }
 
 #counter .time span {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     color: #FFF;
+
 }
 
 /*---------------------------------------
